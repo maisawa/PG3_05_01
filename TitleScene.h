@@ -1,10 +1,11 @@
 #pragma once
+#include "IScene.h"
 
-#include"IScene.h"
-
-class TitleScene:public IScene{
+class TitleScene : public IScene 
+{
 public:
-	void Init()override;
-	void Update(char* keys, char* preKeys)override;
-	void Draw()override;
+
+	void Init() override;
+	void Update(char* keys, char* preKeys) override;
+	void Draw() override;
 };

@@ -1,20 +1,18 @@
 #pragma once
-#include <Vector2.h>
+#include "Vector2.h"
+#include "tama.h"
 
-class Player{
-private:
-
-	Vector2 pos_{50.0f,50.0f};
-	float speed_=3.0f;
+class Player
+{
+public:
+	Bullet* bullet_;
+	Vector2 pos_;
+	int r_;
+	int speed_;
 
 public:
-
-
-void Init();
-void Update();
-void Draw();
-
-void MoveRight();
-void MoveLeft();
-
+	Player(Vector2 pos, int r, int speed);
+	~Player();
+	void Update(char* keys, char* preKeys);
+	void Draw();
 };

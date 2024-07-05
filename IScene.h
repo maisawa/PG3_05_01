@@ -1,19 +1,22 @@
 #pragma once
 
-enum SCENE {
-	TITLE, STAGE, CLEAR
+enum SCENE { 
+	TITLE, //タイトル
+	STAGE, //ゲームシーン
+	CLEAR //クリア
 };
 
 class IScene {
-protected:
+protected: 
 
-	static int sceneNo_;
-public:
-
+	static int sceneNo;
+public: 
+  
 	virtual void Init() = 0;
 	virtual void Update(char* keys, char* preKeys) = 0;
 	virtual void Draw() = 0;
 
 	virtual ~IScene();
+
 	int GetSceneNo();
 };

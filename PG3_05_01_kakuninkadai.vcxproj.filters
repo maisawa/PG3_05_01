@@ -53,13 +53,10 @@
     <ClCompile Include="StageScene.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
-    <ClCompile Include="TitleScene.cpp">
-      <Filter>KamataEngine\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Collision.cpp">
-      <Filter>KamataEngine\Source</Filter>
-    </ClCompile>
     <ClCompile Include="tama.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
   </ItemGroup>
@@ -150,16 +147,10 @@
     <ClInclude Include="StageScene.h">
       <Filter>KamataEngine\Source</Filter>
     </ClInclude>
-    <ClInclude Include="TitleScene.h">
-      <Filter>KamataEngine\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="Collision.h">
-      <Filter>KamataEngine\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="Struct.h">
-      <Filter>KamataEngine\Source</Filter>
-    </ClInclude>
     <ClInclude Include="tama.h">
+      <Filter>KamataEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
       <Filter>KamataEngine\Source</Filter>
     </ClInclude>
   </ItemGroup>

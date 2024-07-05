@@ -1,7 +1,7 @@
 #pragma once
 #include "Vector2.h"
 
-class tama
+class Bullet
 {
 public:
 	Vector2 pos_;
@@ -10,7 +10,7 @@ public:
 	bool isShot_;
 
 public:
-	tama(Vector2 pos, int speed, int r, bool isShot);
+	Bullet(Vector2 pos, int speed, int r, bool isShot);
 	void Update();
 	void Draw();
 };

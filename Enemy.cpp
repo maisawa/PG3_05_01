@@ -1,4 +1,3 @@
-
 #include <Novice.h>
 #include "Enemy.h"
 #include "tama.h"

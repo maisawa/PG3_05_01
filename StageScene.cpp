@@ -1,25 +1,40 @@
-#include <StageScene.h>
+#include <Novice.h>
+#include <math.h>
+#include "StageScene.h"
+#include "Player.h"
 
-void StageScene::Init(){
-	inputHandler_=new InputHandler();
-
-	inputHandler_->AssignMoveRightCommand2PressKeyD();
-	inputHandler_->AssignMoveLeftCommand2PressKeyA();
-
-	player_=new Player();
+StageScene::~StageScene()
+{
+	delete player_;
+	delete enemy_;
 }
 
-void StageScene::Update(){
+void StageScene::Init()
+{
+	player_ = new Player({ 1280 / 2, 720 / 2 }, 16, 4);
+	enemy_ = new Enemy({ 100, 300 }, 3, 16, true);
+}
 
-	iCommand_=inputHandler_->HandleInput();
+void StageScene::Update(char* keys, char* preKeys)
+{
+	player_->Update(keys, preKeys);
+	enemy_->Update();
 
-	if(this->command_){
-		iCommand_->Exec(*player_);
+	float r1 = (float)enemy_->radius_;
+	float r2 = (float)player_->bullet_->r_;
+
+	float a = enemy_->pos_.x - player_->bullet_->pos_.x;
+	float b = enemy_->pos_.y - player_->bullet_->pos_.y;
+	float distance = sqrtf(a * a + b * b);
+
+	if (distance <= r1 + r2) {
+		sceneNo = CLEAR;
 	}
-	player_->Update();
 }
 
 void StageScene::Draw()
 {
-
+	Novice::DrawBox(0, 0, 1280, 720, 0.0f, 0x00000064, kFillModeSolid);
+	player_->Draw();
+	enemy_->Draw();
 }

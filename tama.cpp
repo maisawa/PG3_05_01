@@ -1,7 +1,7 @@
 #include "tama.h"
 #include "Novice.h"
 
-tama::tama(Vector2 pos, int speed, int r, bool isShot)
+Bullet::Bullet(Vector2 pos, int speed, int r, bool isShot)
 {
 	pos_ = pos;
 	speed_ = speed;
@@ -9,7 +9,7 @@ tama::tama(Vector2 pos, int speed, int r, bool isShot)
 	isShot_ = isShot;
 }
 
-void tama::Update()
+void Bullet::Update()
 {
 	if (isShot_ == true)
 	{
@@ -21,7 +21,7 @@ void tama::Update()
 	}
 }
 
-void tama::Draw()
+void Bullet::Draw()
 {
 	if (isShot_ == true)
 	{

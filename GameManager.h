@@ -6,21 +6,20 @@
 #include "StageScene.h"
 #include "ClearScene.h"
 #include <Novice.h>
-using namespace std;//std省略
+using namespace std;//stdを省略できる
 
 class GameManager
 {
-public://メンバ関数
+public:
 
-	GameManager();//コンストラクタ
+	GameManager();
 
-	~GameManager();//デストラクタ
+	~GameManager();
 
 	int Run(char* keys, char* preKeys);
 
-private://メンバ変数
-
-	/*std::*/unique_ptr<IScene> sceneArr_[3];
+private:
+	unique_ptr<IScene> sceneArr_[3];
 
 	int currentSceneNo_;
 	int prevSceneNo_;
