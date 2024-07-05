@@ -1,16 +1,11 @@
 #include "IScene.h"
-#include <dinput.h>
 
-void IScene::Update(char* keys, char* preKeys){
-    if (keys[DIK_SPACE] && preKeys[DIK_SPACE]) {
+int IScene::sceneNo_ = TITLE;
 
-	}
-}
-int IScene::SceneNo_ = TITLE;
-IScene::IScene(){
+IScene::~IScene() {
 
 }
 
-IScene::~IScene(){
-
-}
+int IScene::GetSceneNo() { 
+	return sceneNo_;
+};
