@@ -35,16 +35,31 @@
     <ClCompile Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
-    <ClCompile Include="Command.cpp">
+    <ClCompile Include="ClearScene.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
-    <ClCompile Include="InputHandler.cpp">
+    <ClCompile Include="Enemy.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IScene.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
     <ClCompile Include="StageScene.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="tama.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
   </ItemGroup>
@@ -117,7 +132,16 @@
     <ClInclude Include="C:\KamataEngine\DirectXGame\math\Vector3.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\math\Vector4.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.h" />
-    <ClInclude Include="Command.h">
+    <ClInclude Include="ClearScene.h">
+      <Filter>KamataEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>KamataEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>KamataEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="IScene.h">
       <Filter>KamataEngine\Source</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
@@ -126,7 +150,16 @@
     <ClInclude Include="StageScene.h">
       <Filter>KamataEngine\Source</Filter>
     </ClInclude>
-    <ClInclude Include="InputHandler.h">
+    <ClInclude Include="TitleScene.h">
+      <Filter>KamataEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>KamataEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>KamataEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="tama.h">
       <Filter>KamataEngine\Source</Filter>
     </ClInclude>
   </ItemGroup>
